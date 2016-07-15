@@ -1,0 +1,111 @@
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#content {
+    height: 100%;
+}
+
+#side-nav {
+    height: 100%;
+    z-index: 1;
+}
+
+#slide-out {
+    height: 100%;
+}
+
+#landing-page {
+    height: 100%;
+    z-index: 0;
+}
+
+#menu-icon {
+    padding-top: 10px;
+}
+
+#toSlide {
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+    z-index: 100 !important;
+}
+
+#about-me {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    z-index: 100 !important;
+}
+
+.stars {
+    background: #000 url(http://res.cloudinary.com/dz9yrk0yr/image/upload/v1451159541/stars_aydndz.png) repeat top center;
+    z-index: 0;
+}
+
+
+/*backup-url: http://www.script-tutorials.com/demos/360/images/twinkling.png */
+
+.twinkling {
+    background: transparent url(http://res.cloudinary.com/dz9yrk0yr/image/upload/v1451159541/twinkling_yvha6w.png) repeat top center;
+    z-index: 0;
+    -moz-animation: move-twink-back 200s linear infinite;
+    -ms-animation: move-twink-back 200s linear infinite;
+    -o-animation: move-twink-back 200s linear infinite;
+    -webkit-animation: move-twink-back 200s linear infinite;
+    animation: move-twink-back 200s linear infinite;
+}
+
+.stars,
+.twinkling {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: -1;
+}
+
+@keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-webkit-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-moz-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-ms-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
