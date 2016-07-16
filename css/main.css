@@ -5,19 +5,63 @@ html {
 body {
     width: 100%;
     height: 100%;
+    overflow-y: hidden
 }
 
 #content {
     height: 100%;
 }
 
-#side-nav {
+#side-nav-container {
     height: 100%;
     z-index: 1;
+    list-style: none;
 }
 
-#slide-out {
-    height: 100%;
+#side-nav {
+    height: 60%;
+    width: 100%;
+}
+
+#side-nav li {
+    background: rgba(255, 20, 20, 0);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+#side-nav li:hover {
+    background: dodgerblue;
+    color: #fff;
+}
+
+#side-nav li:hover .black-text {
+    color: #fff;
+}
+
+.nav-bar-text {
+    font-size: 1.3em;
+}
+
+#home-tab,
+#about-tab,
+#experience-tab,
+#projects-tab,
+#skills-tab,
+#interests-tab,
+#contact-tab {
+    height: 13%;
+}
+
+#home-toggle,
+#about-toggle,
+#experience-toggle,
+#projects-toggle,
+#skills-toggle,
+#interests-toggle,
+#contact-toggle {
+    line-height: 70px;
 }
 
 #landing-page {
@@ -25,21 +69,59 @@ body {
     z-index: 0;
 }
 
-#menu-icon {
-    padding-top: 10px;
+#headline {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-size: 2.5em;
+    z-index: 1;
 }
 
-#toSlide {
-    height: 100%;
-    width: 100%;
-    background-color: yellow;
-    z-index: 100 !important;
-}
-
-#about-me {
+#about-me-container {
+    position: relative;
     height: 100%;
     width: 100%;
     background-color: red;
+    z-index: 2 !important;
+}
+
+#experience-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+    z-index: 2 !important;
+}
+
+#projects-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+    z-index: 2 !important;
+}
+
+#skills-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    z-index: 2 !important;
+}
+
+#interests-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    z-index: 2 !important;
+}
+
+#contact-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: pink;
     z-index: 100 !important;
 }
 
@@ -65,10 +147,8 @@ body {
 .twinkling {
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
+    left: 16.666667%;
+    width: 83.333333%;
     height: 100%;
     display: block;
     z-index: -1;
