@@ -6,13 +6,29 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-    <link type="text/css" rel="stylesheet" href="css/main.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="./css/main.css" media="screen,projection" />
+    
+    
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asul" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
 
     <!--
     Let browser know website is optimized for mobile
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 -->
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script type=text/javascript src="./js/main.js"></script>
+    <script src="https://use.fontawesome.com/9753d667e7.js"></script>
+
+
 </head>
 
 <body>
@@ -21,7 +37,7 @@
     <div id='content' class="row">
 
         <div id="side-nav-container" class="col s2 m2 l2">
-            <ul id="side-nav" class="center co0l s2 m2 l2 ">
+            <ul id="side-nav" class="center co0l s2 m2 l2 white-text">
                 <li id="home-tab" class="bold" onclick="onHomeClick()"><a id="home-toggle" class="nav-bar-text black-text">Home</a></li>
                 <li id="about-tab" class="bold" onclick="onAboutClick()"><a id="about-toggle" class="nav-bar-text black-text">About Me</a></li>
                 <li id="experience-tab" class="bold" onclick="onExperienceClick()"><a id="experience-toggle" class="nav-bar-text black-text">Experience</a></li>
@@ -32,13 +48,24 @@
             </ul>
         </div>
 
-        <div id="landing-page" class="col s10 m10 l10">
+        <div id="landing-page" class="col s10 m10 l10 center">
 
             <div class="stars"></div>
             <div class="twinkling"></div>
-
-            <div id="headline" class="white-text center">
-                <a>fasdfsdf</a>
+        
+            <div id="headline" class="white-text">
+                <a id="name-headline" class="white-text">Alex Jordache</a>  <br>
+                <a id="sub-headline" class="white-text"> Tech aficionado. Creative coder. Stargazer. </a>
+                <br>
+                <a class="white-text landing-page-icon" href="https://www.github.com/therealAJ"><i class="fa fa-github" aria-hidden="true">&nbsp</i></a>
+                <a href="https://www.linkedin.com/in/ajordache" class="white-text landing-page-icon"><i class="fa fa-linkedin" aria-hidden="true">&nbsp</i> </a>
+                <a href="https://plus.google.com/115318613127439897355" class="white-text landing-page-icon">
+                <i class="fa fa-google-plus" aria-hidden="true">&nbsp</i> </a>
+                <a class="white-text landing-page-icon">
+                <i class="fa fa-envelope">&nbsp</i> </a>
+                <a href="https://plus.google.com/115318613127439897355" class="white-text landing-page-icon">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
             </div>
 
 
@@ -55,11 +82,6 @@
     </div>
 
 
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-    <script type=text/javascript src="/js/main.js"></script>
 
 </body>
 
