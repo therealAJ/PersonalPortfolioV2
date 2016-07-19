@@ -168,7 +168,14 @@ body {
     padding-left: 30px;
 }
 
-.experience-img {}
+#volunteer-column {
+    padding-left: 30px;
+}
+
+#volunteer-header {
+    padding-bottom: 30px;
+    font-family: 'Nunito', sans-serif;
+}
 
 .experience-text {
     padding-left: 20px !important;
@@ -199,6 +206,10 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     font-weight: 100;
+}
+
+.job-reqs {
+    list-style: circle !important;
 }
 
 .job-tile {
