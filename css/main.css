@@ -157,15 +157,16 @@ body {
 
 #experience {
     margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 .experience-block {
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 #work-column {
     padding-top: 40px;
-    padding-left: 30px;
+    padding-left: 80px;
 }
 
 #volunteer-column {
@@ -173,15 +174,18 @@ body {
 }
 
 #volunteer-header {
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     font-family: 'Nunito', sans-serif;
 }
 
 .experience-text {
     padding-left: 20px !important;
+    padding-right: 20px !important;
 }
 
-.experience-description {}
+#last-job {
+    margin-bottom: 20px !important;
+}
 
 .job-title {
     text-align: left;
@@ -206,10 +210,6 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     font-weight: 100;
-}
-
-.job-reqs {
-    list-style: circle !important;
 }
 
 .job-tile {
