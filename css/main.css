@@ -365,6 +365,7 @@ body {
 #skills-box {
     height: 90%;
     padding: 10px 10px 10px 10px;
+    overflow-y: auto;
 }
 
 #skills-header {
@@ -446,6 +447,10 @@ body {
 .verticalLine {
     border-left: thin solid black;
     border-bottom: thin solid black;
+}
+
+.skill-column {
+    margin-top: 150px;
 }
 
 #interests-container {
