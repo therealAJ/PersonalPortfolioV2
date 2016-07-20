@@ -51,6 +51,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.default-text {
+    font-family: 'Nunito', sans-serif;
+}
+
 #home-tab,
 #about-tab,
 #experience-tab,
@@ -131,18 +135,40 @@ body {
     position: relative;
     height: 100%;
     width: 100%;
-    background-color: #177E89;
+    background-color: #586F7C;
     z-index: 2 !important;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #about-me {
     height: 100%;
+    padding: 10px 10px 10px;
+    text-align: left;
+    overflow-y: auto;
 }
 
 #summary {
-    margin-top: 100px;
+    position: relative;
     font-family: 'Nunito', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+#summary-pic-container {
+    height: 100%;
+    position: relative;
+}
+
+#summary-pic {
+    position: relative;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 480px;
+    width: 340px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 #experience-container {
@@ -331,8 +357,95 @@ body {
     position: relative;
     height: 100%;
     width: 100%;
-    background-color: #84DCCF;
+    background-color: #A0CFD3;
     z-index: 2 !important;
+    padding-top: 30px;
+}
+
+#skills-box {
+    height: 90%;
+    padding: 10px 10px 10px 10px;
+}
+
+#skills-header {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.rank-text {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#ranking-container {
+    display: table;
+    height: 500px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+#ranking-container > div {
+    display: table-row;
+}
+
+#ranking-container > div > h6 {
+    display: table-cell;
+}
+
+#rank-1-wrap > h6 {
+    vertical-align: top;
+}
+
+#rank-2-wrap > h6 {
+    vertical-align: middle;
+}
+
+#rank-3-wrap > h6 {
+    vertical-align: bottom;
+}
+
+.chart {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    background-size: 100% 50px;
+    background-position: left top;
+}
+
+.chart li {
+    position: relative;
+    display: table-cell;
+    vertical-align: bottom;
+    height: 200px;
+}
+
+.chart span {
+    margin: 0 1em;
+    display: block;
+    background: #4E5283;
+    border-radius: 4px;
+}
+
+.chart span:before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    padding: 5px 0.em;
+    display: block;
+    text-align: center;
+    content: attr(title);
+    word-wrap: break-word;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+}
+
+.verticalLine {
+    border-left: thin solid black;
+    border-bottom: thin solid black;
 }
 
 #interests-container {
@@ -511,6 +624,9 @@ body {
 @media (min-width: 1500px) {
     #projects {
         margin-left: 90px;
+    }
+    .chart span {
+        margin: 0 1.5em;
     }
 }
 
