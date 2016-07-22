@@ -360,10 +360,11 @@ body {
     background-color: #A0CFD3;
     z-index: 2 !important;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #skills-box {
-    height: 90%;
+    height: 100%;
     padding: 10px 10px 10px 10px;
     overflow-y: auto;
 }
@@ -371,6 +372,7 @@ body {
 #skills-header {
     font-size: 25px;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .rank-text {
@@ -435,7 +437,7 @@ body {
     left: 0;
     right: 0;
     top: 100%;
-    padding: 5px 0.em;
+    padding: 5px 0.1em;
     display: block;
     text-align: center;
     content: attr(title);
@@ -445,12 +447,45 @@ body {
 }
 
 .verticalLine {
-    border-left: thin solid black;
-    border-bottom: thin solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
 }
 
 .skill-column {
-    margin-top: 150px;
+    margin-top: 75px;
+}
+
+.skills-header {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.skills {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    margin: 0 auto;
+    display: table;
+}
+
+#skill-boxie {
+    border-left: 2px dashed black;
+    border-right: 2px dashed black;
+    border-top: 2px dashed black;
+    border-bottom: 2px dashed black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 2px;
+}
+
+.skill-arrow:before {
+    content: "\3E\ ";
+    color: #0E6BA8;
+}
+
+.skill-icon {
+    color: #4E5283;
 }
 
 #interests-container {
@@ -626,6 +661,9 @@ body {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
+
+/*Big screen*/
+
 @media (min-width: 1500px) {
     #projects {
         margin-left: 90px;
@@ -638,5 +676,30 @@ body {
 @media (min-width: 995px) and (max-width: 1300px) {
     #projects {
         margin-left: -40px;
+    }
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media (min-width: 320px) and (max-width: 990px) {
+    #skills-box {
+        overflow-y: hidden;
+    }
+    #ranking-container {
+        height: 50%;
+    }
+    #chart-container {
+        height: 50%;
+    }
+    .chart {
+        height: 100%;
+    }
+    #skill-boxie {
+        height: 55%;
+    }
+    .skills,
+    .skill-column {
+        height: 55%;
     }
 }
