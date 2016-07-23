@@ -19,6 +19,12 @@ $(document).ready(function () {
 //    $('.modal-trigger').leanModal();
 //});
 
+$(document).ready(function () {
+    $('.slider').slider({
+        full_width: true
+    });
+});
+
 
 
 $(document).ready(function () {
