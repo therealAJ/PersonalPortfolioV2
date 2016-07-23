@@ -398,15 +398,48 @@
 
             <!--SECTION 6 - CONTACT-->
 
-            <div id="contact-container"></div>
-
+            <div id="contact-container">
+                <form id="form" class="row container center z-depth-4" action="https://formspree.io/alex.jordache@alumni.ubc.ca" method="POST">
+                    <div class="row">
+                        <div class="input-field col s12 white-text">
+                            <input class="input-field-text" id="name" type="text" name="name">
+                            <label for="name" class="login-text">Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 white-text">
+                            <input class="input-field-text" id="user_email" type="email" class="validate" name="_replyto">
+                            <label for="email" class="login-text">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 white-text">
+                            <textarea id="textarea1" class="materialize-textarea" type="text-area" name="Message"></textarea>
+                            <label for="textarea1" class="login-text">Message</label>
+                        </div>
+                    </div>
+                    <button id="send_email" class="waves-effect waves-light btn-large black homepage-buttons button-text center modal-trigger" href="#modal1" type="submit" value="Send"> SEND </button>
+                </form>
+            </div>
         </div>
 
     </div>
 
+
+    <!--CONTACT MODAL-->
+
+    <div id="modal1" class="modal modal-fixed-footer thank-you-modal">
+        <div class="modal-content">
+            <h4>Thank you!</h4>
+            <p>Your email has been sent. I'll get back to you shortly.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+        </div>
+    </div>
+
+
     <!--PROJECT MODALS-->
-
-
 
     <!-- Lets Chill Modal -->
     <div id="lets-chill-modal" class="modal modal-fixed-footer">
