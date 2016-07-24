@@ -1,3 +1,17 @@
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 4000);
+}
+
+function showPage() {
+    $('#loader').fadeOut(800);
+    $('#loader-container').fadeOut(800);
+}
+
+
+
+
 // Initialize collapse button
 $(".button-collapse").sideNav();
 
